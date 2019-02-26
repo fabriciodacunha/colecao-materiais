@@ -1,0 +1,57 @@
+{
+    "name": "Material",
+    "fields": [
+        {
+            "fieldName": "nome",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "tipo",
+            "fieldType": "TipoMaterial",
+            "fieldValues": "AUDIO,FILME,TEXTO,IMAGEM"
+        },
+        {
+            "fieldName": "url",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "autor",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "palavrasChave",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "descricao",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "data",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "usuario",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "colecao",
+            "otherEntityName": "colecao",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "material"
+        }
+    ],
+    "changelogDate": "20190226030012",
+    "entityTableName": "material",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

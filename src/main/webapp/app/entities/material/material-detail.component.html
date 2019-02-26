@@ -1,0 +1,61 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="material">
+            <h2><span>Material</span> {{material.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Nome</span></dt>
+                <dd>
+                    <span>{{material.nome}}</span>
+                </dd>
+                <dt><span>Tipo</span></dt>
+                <dd>
+                    <span>{{material.tipo}}</span>
+                </dd>
+                <dt><span>Url</span></dt>
+                <dd>
+                    <span>{{material.url}}</span>
+                </dd>
+                <dt><span>Autor</span></dt>
+                <dd>
+                    <span>{{material.autor}}</span>
+                </dd>
+                <dt><span>Palavras Chave</span></dt>
+                <dd>
+                    <span>{{material.palavrasChave}}</span>
+                </dd>
+                <dt><span>Descricao</span></dt>
+                <dd>
+                    <span>{{material.descricao}}</span>
+                </dd>
+                <dt><span>Data</span></dt>
+                <dd>
+                    <span>{{material.data}}</span>
+                </dd>
+                <dt><span>Usuario</span></dt>
+                <dd>
+                    <span>{{material.usuario}}</span>
+                </dd>
+                <dt><span>Colecao</span></dt>
+                <dd>
+                    <div *ngIf="material.colecao">
+                        <a [routerLink]="['/colecao', material.colecao?.id, 'view']">{{material.colecao?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/material', material.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
