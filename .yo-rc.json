@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "ColecaoDeMateriais",
+    "packageName": "com.fabocuoli.dev",
+    "packageFolder": "com/fabocuoli/dev",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": false,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.8.1",
+    "jwtSecretKey": "Mjg0MTk0OWE2NGRkOTcyMGZhOWU1OTk5OTRlYjkxZjBjZTE3ZThlZjU1YWRlMmExODY5Y2NiNzdmNWRhYjZjZDExZWFiNzRlNTdjNDA2Njc2YjMwMDYxODQxOTgyYzQxMWM1ZGM0Y2NhNzhmYTMxMWVmMGMwMjQ0NWY1MzQ0ZGQ=",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "fabriciodacunha",
+  "repository-name": "colecao-materiais"
+}
