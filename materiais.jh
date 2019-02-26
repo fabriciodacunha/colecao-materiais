@@ -1,0 +1,37 @@
+entity Material {
+	nome String,
+    tipo TipoMaterial,
+    url String,
+    autor String,
+    palavrasChave String,
+    descricao String,
+    data LocalDate,
+    usuario String
+}
+
+enum TipoMaterial {
+	AUDIO,
+    FILME,
+    TEXTO,
+    IMAGEM
+}
+
+entity Colecao {
+	nome String
+}
+
+relationship OneToOne {
+	Material{colecao} to Colecao
+}
+
+// Set pagination options
+paginate Material with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
